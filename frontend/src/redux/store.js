@@ -6,13 +6,14 @@ import {
   productListDetails,
 } from "./reducers/productReducers";
 import { cartReducer } from "./reducers/cartReducers";
-import { userLoginReducer } from "./reducers/userReduers";
+import { userLoginReducer, userRegisterReducer } from "./reducers/userReduers";
 
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productListDetails,
   asem: cartReducer,
   userLogin: userLoginReducer,
+  userRegister: userRegisterReducer,
 });
 
 // Ambil data cartItems dari local storage
